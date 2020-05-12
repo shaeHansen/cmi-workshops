@@ -34,12 +34,12 @@ database. Click "Create New Preparation".
 
 You should now be brought to a "Processing" tab of your preparation info:
 
-.. figure::  images/prep_processing.png
+.. figure::  images/prep_processing2.PNG
    :align:   center
 
 By clicking on the "Summary" tab on this page you can see the preparation info that you uploaded.
 
-.. figure::  images/prep_summary.png
+.. figure::  images/prep_summary2.PNG
    :align:   center
 
 In addition, you should see a "16S" button appear under "Data Types" on the
@@ -60,15 +60,15 @@ here.
 
 Now, you can associate the sequence data from your study with this preparation. 
 
-.. figure::  images/prep_processing.png
+.. figure::  images/prep_processing2.PNG
    :align:   center
 
-In the prep info dialogue, there is a dropdown menu below the words *No files
-attached to this preparation*, labeled "Select type". Click "Choose a type" to
-see a list of available file types. In our case, we've uploaded FASTQ-formatted
-file for all samples in our study, so we will choose "FASTQ - None". In some cases
-outside of this tutorial, you may have per sample FASTQ files, so take care in
-considering which data type you are handling.
+Select the processing tab again.  In the prep info dialogue, there is a dropdown 
+menu below the words *No files attached to this preparation*, labeled "Select type". 
+Click "Choose a type" to see a list of available file types. In our case, we've 
+uploaded FASTQ-formatted files for all samples in our study, so we will choose 
+"FASTQ - None". In some cases outside of this tutorial, you may have per sample 
+FASTQ files, so take care in considering which data type you are handling.
 
 *Magically*, this will prompt Qiita to associate your uploaded files with the
 corresponding samples in your preparation info. (Our prep info file has a
@@ -81,7 +81,7 @@ below the import dropdown. You'll want to give the set of these
 FASTQ files a name (*Add a name for the file* field below *Select type: FASTQ - None*), and then click
 "Add files" below.
 
-.. figure::  images/prep_info_sequences4.png
+.. figure::  images/prep_info_sequences5.PNG
    :align:   center
 
 That's it! Your data are ready for processing.
@@ -196,12 +196,12 @@ Note that the commands haven't actually been run yet! (We'll still need to click
 "Run" at the top.) This allows us to add multiple processing steps to our study
 and then run them all together.
 
-We're going to process our sequences files using two different workflows. In
+We're going to process our sequence files using two different workflows. In
 the first, we'll use a conventional reference-based OTU picking strategy to
 cluster our 16S sequences into OTUs. This approach matches each sequence to a
 reference database, ignoring sequences that don't match the reference. In the
 second, we will use `deblur <http://msystems.asm.org/content/2/2/e00191-16>`__,
-which uses an algorithm to remove sequence error, allowing us to work with
+which uses an algorithm to remove sequence errors, allowing us to work with
 unique sequences instead of clustering into OTUs. Both of these approaches work
 great with Qiita, because we can compare the observations between studies
 without having to do any sort of re-clustering!
