@@ -198,7 +198,7 @@ Information" tab and see a list of the imported metadata fields.
    :align:   center
 
 
-Note: The warning is to let you know this study is missing columsn that are required for EBI-ENA submission. For more information you can visit the `Send data to EBI-ENA <https://qiita.ucsd.edu/static/doc/html/checklist-for-ebi-ena-submission.html>`__ information page.
+Note: The warning is to let you know this study is missing columns that are required for EBI-ENA submission. For more information you can visit the `Send data to EBI-ENA <https://qiita.ucsd.edu/static/doc/html/checklist-for-ebi-ena-submission.html>`__ information page.
 
 To check out the different metadata
 values select the "Sample-Prep Summary" tab. On this page, select a metadata column to visualize in the "Add sample column information to table" dropdown menu and click
