@@ -42,6 +42,10 @@ By clicking on the "Summary" tab on this page you can see the preparation info t
 .. figure::  images/prep_summary2.PNG
    :align:   center
 
+As the owner of the study, you will also have the options to delete or deprecate the preparation.
+Once an analysis has been created from any object in a preparation, you will be unable to delete
+the prep.  Deprecating the preparation lets others know it is an older version.
+
 In addition, you should see a "16S" button appear under "Data Types" on the
 menu to left:
 
@@ -93,7 +97,7 @@ Exploring the raw data
 Click on the 16S menu on the left. Now that you've associated sequence
 files with this prep, you'll have a "Processing network" displayed:
 
-.. figure::  images/file_network5.png
+.. figure::  images/file_network6.PNG
    :align:   center
 
 If you see this message:
@@ -104,7 +108,7 @@ If you see this message:
 It means that your files need time to load. Refresh your screen after about 1 minute.
 
 Your collection of FASTQ files for this prep are all represented by a single
-object in this network, currently called "CMI tutorial - 14 skin samples". Click on the object.
+object in this network, called "[user's_name] (FASTQ)" in the example. Click on the object.
 
 Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
@@ -162,7 +166,7 @@ Select the "Split libraries FASTQ" step. Now, you will be able to select the
 specific combination of parameters to use for this step in the "Choose
 parameter set" dropdown menu.
 
-.. figure::  images/split_libraries4.png
+.. figure::  images/split_libraries5.PNG
    :align:   center
 
 For our files, choose "Multiplexed FASTQ; Golay 12 base pair reverse complement
@@ -176,7 +180,7 @@ You'll see the files network update. In addition to the original white object,
 you should now see the processing command (represented in yellow) and the object
 that will be produced from that command (represented in grey).
 
-.. figure::  images/demultiplexed_workflow4.png
+.. figure::  images/demultiplexed_workflow5.PNG
    :align:   center
 
 You can click on the command to see the parameters used, or on an object to
@@ -184,12 +188,12 @@ perform additional steps.
 
 Next we want to trim to a particular length, to ensure our samples will be comparable to other samples already in the database. Click back on the “demultiplexed (Demultiplexed)”. This time, select the Trimming operation. Currently, there are seven trimming length options. Let’s choose “100 basepairs”, which trims to the first 100bp, for this run, and click “Add Command”.
 
-.. figure::  images/trimming_command4.png
+.. figure::  images/trimming_command6.PNG
    :align:   center
 
 Click “Add Command”, and you will see the network update:
 
-.. figure::  images/trimming_workflow.png
+.. figure::  images/trimming_workflow2.PNG
    :align:   center
    
 Note that the commands haven't actually been run yet! (We'll still need to click
@@ -211,12 +215,12 @@ without having to do any sort of re-clustering!
 The closed-reference workflow
 -----------------------------
 
-To do closed reference OTU picking, click on the "Trimmed Demultiplexed 100 (Demultiplexed)" object and
+To do closed reference OTU picking, click on the "Trimmed Demultiplexed (Demultiplexed)" object and
 select the "Pick closed-reference OTUs" command. We will use the "Defaults"
 parameter set for our data, which are relatively small. For a larger
 data set, we might want to use the "Defaults - parallel" implementation.
 
-.. figure::  images/closed_reference_OTU4.png
+.. figure::  images/closed_reference_OTU5.PNG
    :align:   center
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
@@ -224,7 +228,7 @@ choose to use the Silva 119 18S databsase, or the UNITE 7 fungal ITS database.
 
 Click "Add Command", and you will see the network update:
 
-.. figure::  images/OTU_workflow4.png
+.. figure::  images/OTU_workflow5.PNG
    :align:   center
 
 Here you can see the blue "Pick closed-reference OTUs" command added, and that
@@ -241,16 +245,16 @@ the demultiplexed sequences directly, "deblur" works best when all the
 sequences are the same length. By trimming to a particular length, we can also
 ensure our samples will be comparable to other samples already in the database.
 
-Click back on the "Trimmed Demultiplexed 100 (Demultiplexed)" object. This time, select the `Deblur`
+Click back on the "Trimmed Demultiplexed (Demultiplexed)" object. This time, select the `Deblur`
 operation. Choose "Deblur" from the "Choose command" dropdown, and "Defaults" for
 the parameter set. 
 
-.. figure::  images/trimmed_deblur_command4.png
+.. figure::  images/trimmed_deblur_command5.PNG
    :align:   center
    
 Add this command to create this workflow:
 
-.. figure::  images/full_workflow5.png
+.. figure::  images/full_workflow7.PNG
    :align:   center
 
 Now you can see that we have the same "Trimmed Demultiplexed (Demultiplexed)" object being used for two
@@ -267,7 +271,7 @@ Running the workflow
 
 Now, we can see the whole set of commands and their output files:
 
-.. figure::  images/full_workflow5.png
+.. figure::  images/full_workflow7.PNG
    :align:   center
 
 Click "Run" at the top of the screen, and Qiita will start executing all of
@@ -276,7 +280,7 @@ these jobs. You'll see a "Workflow submitted" banner at the top of your window.
 
 The full workflow can take time to load depending on the amount of samples and Qiita workload. You can keep track of what is running by looking at the colors of the command artifacts. If yellow, the commands are being run now. If green, the commands have successfully been run. If red, the commands have failed.
 
-.. figure::  images/full_workflow6.png
+.. figure::  images/full_workflow8.PNG
    :align:   center
 
 
