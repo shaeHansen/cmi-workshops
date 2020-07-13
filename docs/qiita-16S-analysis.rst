@@ -1,7 +1,7 @@
 Analysis of Closed Reference Process
 ------------------------------------
 
-To create an analysis, select "Create new analysis" from the top menu.
+To create an analysis, hover over "Analysis" on the top menu and select "Create new analysis" from the drop down menu.
 
 This will take you to a list of studies with samples available to you for
 analysis, divided between your studies and publicly available studies ("Public Studies").
@@ -10,7 +10,7 @@ analysis, divided between your studies and publicly available studies ("Public S
    :align:   center
 
 Find the "CMI workshop analysis" study in Public Studies. You can use the search window at the top right, or filter by tags ("CMIWorkshop" tag).
-Click the green plus sign at the left of the row. This will expand the study to expose all
+Click the green plus sign at the left of the row under "Expand for analysis". This will expand the study to expose all
 the objects from that study that are available to you for analysis.
 
 .. figure::  images/study_expanded3.png
