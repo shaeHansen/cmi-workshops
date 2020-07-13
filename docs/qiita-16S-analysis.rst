@@ -42,7 +42,7 @@ description, then click "Create Analysis".
 .. figure::  images/create_analysis_button2.png
    :align:   center
 
-This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
+This brings you to the processing network page. This may take 2 to 5 minutes to load. You can analyze data that has been run.
 
 .. figure::  images/processing_network_photo4.png
    :align:   center
