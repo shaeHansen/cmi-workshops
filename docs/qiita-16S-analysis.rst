@@ -324,8 +324,6 @@ Under the "Animations" tab you will notice 2 pull-down menus:
 
 If you click the pull-down for "Category to sort samples" you can choose the category that you will be sorting the samples by. By selecting the pull-down menu for "Category to group sample" you can choose the category that you will be grouping the samples by.
 
-Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the `Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>`__ and follow along with your test data.
-
 Beta Diversity Group Significance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
